@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Linketinder - Company</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>LK</h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="behind-modal">
+        <h1>Bem vindo a página para empresa no Linketinder</h1>
+        <p>Escolha uma das opções abaixo:</p>
+        <div class="buttons">
+          <button id="register-comp">Cadastrar</button>
+          <button id="show-prof-comp">Ver perfil</button>
+        </div>
+      </section>
+      <section id="modal" style="display: none">
+        <div id="modal-content">
+          <i id="exitModal" class="ph ph-x-circle"></i>
+          <h2>Login</h2>
+          <input id="companyUser" type="text" placeholder="Nome" />
+          <input id="companyPass" type="password" placeholder="Senha" />
+          <button id="sigIn">Entrar</button>
+        </div>
+      </section>
+    </div>
+    <script src="./business.min.js"></script>
+  </body>
+</html>

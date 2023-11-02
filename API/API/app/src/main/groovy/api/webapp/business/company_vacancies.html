@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta Estado="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Linketinder - Company</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>LK</h1>
+        <ul>
+          <li><a href="./intro_company.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="vacancies-section">
+        <h1>Cadastro de vaga</h1>
+        <form action="">
+          <div class="inputs">
+            <div class="form-detail">
+              <label class="sr-only" for="name">Name</label>
+              <input type="text" placeholder="Nome" id="nameVacancy"/>
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="form-detail">
+              <label class="sr-only" for="skills">Skills</label>
+              <input type="text" placeholder="Skills" id="skillsVacancy"/>
+            </div>
+          </div>
+        </form>
+        <div class="form-detail">
+          <label class="sr-only" for="description">Descrição</label>
+          <textarea name="description" cols="50" rows="10" placeholder="Descrição" id="descriptionVacancy"></textarea>
+        </div>
+        <button id="registerVacancy">Cadastrar</button>
+      </section>
+    </div>
+    <script src="./business.min.js"></script>
+  </body>
+</html>

@@ -37,6 +37,7 @@ class CompanyDAOImpl implements CompanyDAO{
         }
     }
 
+    @Override
     boolean checkCompanyExistence(String name, String password) {
         try {
             boolean result = sql.firstRow("""
@@ -44,7 +45,6 @@ class CompanyDAOImpl implements CompanyDAO{
             FROM companies
             WHERE name = $name AND password = $password
            """)
-
 
             return result
         }

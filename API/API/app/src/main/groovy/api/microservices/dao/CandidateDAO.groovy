@@ -7,4 +7,6 @@ interface CandidateDAO {
 
     void insertCandidate(Candidate candidate)
 
+    boolean checkCandidateExistence(String name, String password)
+
 }

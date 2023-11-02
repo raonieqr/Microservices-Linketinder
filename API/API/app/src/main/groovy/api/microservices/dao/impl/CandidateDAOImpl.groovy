@@ -71,6 +71,7 @@ class CandidateDAOImpl implements  CandidateDAO {
         }
     }
 
+    @Override
     boolean checkCandidateExistence(String name, String password) {
         try {
             boolean result = sql.firstRow("""

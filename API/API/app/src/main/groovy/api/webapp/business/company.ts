@@ -85,8 +85,10 @@ let btnRegister = document.getElementById("register");
 
 function handleRegisterClick(): void {
 
-    if (saveCompanyData())
-        window.location.href = "./company_profile.html";
+    saveCompanyData().then(result => {
+        if (result)
+            window.location.href = "./company_profile.html";
+    });
 }
 
 btnRegister?.addEventListener("click", handleRegisterClick);
@@ -190,32 +192,33 @@ function saveCompanyData() {
             // vacancy: null
         };
 
-        sendRegisterCompany(JSON.stringify(companyLocal))
-
-        localStorage.setItem("companyLocal", JSON.stringify(companyLocal));
-
-        return true;
+        return sendRegisterCompany(JSON.stringify(companyLocal));
     }
-    return false;
+    return Promise.resolve(false);
 }
 
-function sendRegisterCompany(data: any) {
-    axios.post('/app/registerCompany', data, {
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-        .then(response => {
-            if (response.status === 201) {
-                console.log("Cadastro realizado!");
-            } else {
-                throw new Error('Request Error');
+function sendRegisterCompany(data: any): Promise<boolean> {
+    return new Promise<boolean>((resolve, reject) => {
+        axios.post('/app/registerCompany', data, {
+            headers: {
+                'Content-Type': 'application/json'
             }
         })
-        .catch(error => {
-            alert(error.message);
-        });
+            .then(response => {
+                if (response.status === 201) {
+                    console.log("Cadastro realizado!");
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
+            })
+            .catch(error => {
+                alert(error.message);
+                resolve(false);
+            });
+    });
 }
+
 
 
 

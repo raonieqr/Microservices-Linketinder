@@ -77,12 +77,10 @@ if (btnSignIn)
 const btnRegister = document.getElementById("register");
 
 function handleRegisterButtonClick() {
-  if (saveCandidateData())
-    redirectToCandidateProfile();
-}
-
-function redirectToCandidateProfile() {
-  window.location.href = "candidate_profile.html";
+  saveCandidateData().then(result => {
+    if(result)
+      window.location.href = "candidate_profile.html";
+  });
 }
 
 if (btnRegister) {
@@ -175,7 +173,7 @@ function processCEPData(content: any) {
   }
 }
 
-function saveCandidateData(): boolean {
+function saveCandidateData(): Promise<boolean>{
   if (validateInputFields()) {
 
     const nameInput = check.getInput("name");
@@ -196,7 +194,7 @@ function saveCandidateData(): boolean {
         !passwordInput || !descriptionInput || !stateInput
     ) {
       alert("Error: campo vazio");
-      return false;
+      return Promise.resolve(false);
     }
 
     const candidateLocal = {
@@ -216,31 +214,31 @@ function saveCandidateData(): boolean {
       // applications: null,
     };
 
-    sendRegisterCandidate(JSON.stringify(candidateLocal));
-
-    localStorage.setItem("candidateLocal", JSON.stringify(candidateLocal));
-
-    return true;
+    return sendRegisterCandidate(JSON.stringify(candidateLocal));
   }
-  return false;
+  return Promise.resolve(false);
 }
 
 function sendRegisterCandidate(data: any) {
-  axios.post('/app/registerCandidate', data, {
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-      .then(response => {
-        if (response.status === 201) {
-          console.log("Cadastro realizado!");
-        } else {
-          throw new Error('Request Error');
-        }
-      })
-      .catch(error => {
-        alert(error.message);
-      });
+  return new Promise<boolean>((resolve, reject) => {
+    axios.post('/app/registerCandidate', data, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+        .then(response => {
+          if (response.status === 201) {
+            console.log("Cadastro realizado!");
+            resolve(true);
+          } else {
+            resolve(false);
+          }
+        })
+        .catch(error => {
+          alert(error.message);
+          resolve(false);
+        });
+  });
 }
 
 

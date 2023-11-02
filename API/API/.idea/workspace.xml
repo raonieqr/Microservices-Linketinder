@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="834d1a4f-b366-4b39-a021-02dfb9df979a" name="Changes" comment="" />
+    <list default="true" id="834d1a4f-b366-4b39-a021-02dfb9df979a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/business.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/business.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/company.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/company_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/company_registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/company_vacancies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/business/intro_company.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/candidate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/candidate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/candidate_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/candidate_registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/candidate_vacancies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/candidate/intro_candidate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/redirect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/groovy/api/webapp/style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,12 +51,18 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -46,7 +76,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rasilva/Developer/gradle/API/app/src/main/groovy/api/microservices/model/entities&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rasilva/Developer/gradle/Microservices-Linketinder/API/API&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,6 +152,8 @@
       <workItem from="1698957104285" duration="112000" />
       <workItem from="1698964934119" duration="46000" />
       <workItem from="1698965375777" duration="179000" />
+      <workItem from="1698966368020" duration="196000" />
+      <workItem from="1698967214394" duration="373000" />
     </task>
     <servers />
   </component>

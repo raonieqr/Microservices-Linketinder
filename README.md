@@ -1,6 +1,6 @@
 # Microservices-Linketinder
 
-## This microservice is a simple implementation of a registration and login system using the Groovy language. It provides HTTP endpoints for registering new users and authenticating existing users.
+This microservice is a simple implementation of a registration and login system using the Groovy language. It provides HTTP endpoints for registering new users and authenticating existing users.
 
 # Endpoints
 - /registerCandidate:
